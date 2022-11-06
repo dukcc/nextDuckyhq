@@ -1,16 +1,15 @@
-import Image from 'next/image'
-import styles from './page.module.scss'
-
-export default function Home() {
-  return (
-    <><head>
-      <title>Welcome to DuckyHQ</title>
-    </head><body>
-      <div className={styles.landing}>
-        <h1>Welcome to DuckyHQ</h1>
-        <div className="break"></div>
-        <h3>subtitle</h3>
-      </div>
-    </body></>
-  )
+export default function Page() {
+	return (
+		<>
+		<div id="landing" className="bg-black text-white h-screen flex align-middle justify-center flex-wrap">
+			<h1 className="text-5xl font-default font-bold">
+				Title
+			</h1>
+			<div className="basis-full h-0"></div>
+			<p className="text-2xl font-default">
+				Subtitle
+			</p>
+		</div>
+		</>
+	)
 }
