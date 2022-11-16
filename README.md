@@ -1,6 +1,6 @@
 # Next DuckyHQ
 
-Probably the version of the DuckyHQ website I will use.
+The version of the DuckyHQ website I will use.
 
 Built with Next.js 13, and Tailwind CSS.
 
