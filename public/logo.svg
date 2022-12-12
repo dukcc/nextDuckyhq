@@ -1,16 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1080 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:1.5;">
-    <g transform="matrix(1,0,0,1,-0.65127,-5.68434e-14)">
-        <g transform="matrix(1.3163,0,0,1.27095,-162.912,-155.366)">
-            <path d="M895,337L540.658,122.244L174,336L174,753L540,972L895,753L895,337ZM828.586,713.909L539.487,892.255C539.487,892.255 324.539,763.638 240.414,713.301C240.414,713.301 240.414,376.214 240.414,376.214L240.414,376.214C310.443,335.389 470.52,242.066 540.016,201.551C540.016,201.551 828.586,376.444 828.586,376.444L828.586,713.909Z" style="fill:url(#_Linear1);"/>
-        </g>
-        <g transform="matrix(1.24711,0,0,1.24711,-125.931,-142.171)">
-            <path d="M207,363L350,455L349,662L540,767L540,916L540,767L732.901,641L732,449L875,359L732,449L540,346L350,455L349,662L540,557.384L732.901,641L540,557.384L540,346" style="fill:none;stroke:url(#_Linear2);stroke-width:70.1px;"/>
-        </g>
-    </g>
-    <defs>
-        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(949.053,0,0,1080,66.1247,540)"><stop offset="0" style="stop-color:rgb(0,137,248);stop-opacity:1"/><stop offset="0.54" style="stop-color:rgb(61,195,241);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(85,218,238);stop-opacity:1"/></linearGradient>
-        <linearGradient id="_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(949.053,0,0,1080,66.1247,540)"><stop offset="0" style="stop-color:rgb(0,137,248);stop-opacity:1"/><stop offset="0.54" style="stop-color:rgb(61,195,241);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(85,218,238);stop-opacity:1"/></linearGradient>
-    </defs>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><rect id="Artboard1" x="0" y="0" width="512" height="512" style="fill:none;"/><clipPath id="_clip1"><rect x="0" y="0" width="512" height="512"/></clipPath><g clip-path="url(#_clip1)"><g><circle cx="256" cy="256" r="256" style="fill:#001cff;"/><rect x="-0" y="0" width="256" height="512" style="fill:#001cff;"/></g><rect x="0" y="0" width="256" height="512" style="fill:#0081ff;"/><path d="M-0.792,0l0,512l256.792,-256.792l-256.792,-255.208Z" style="fill:#ff0063;"/></g></svg>
