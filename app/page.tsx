@@ -1,18 +1,65 @@
 
-export default function Page() {
+import Link from "next/link";
+
+async function getFeatured() {
+	const res = await fetch('http://127.0.0.1:8090/api/collections/featured/records?page=1&perPage=30', { cache: 'no-store' });
+	const data = await res.json();
+	return data?.items as any[];
+}
+
+export default async function Page() {
+
+	const featuredWork = await getFeatured();
+
 	return (
 		<>
-		<div className="bg-black h-full text-white overflow-x-hidden font-default">
-			<title>DuckyHQ // Home</title>
-			<div className="bg-[url(/bg.png)] bg-center bg-cover mx-8 rounded-xl border border-white/20 h-full text-left grid place-items-left pl-[0.80rem] mt-[12rem]">
-				<h1 className="text-[15rem] bg-clip-text font-bold pt-[1.1rem] max-[1333px]:text-9xl max-[1333px]:pl-[0.50rem] max-[750px]:text-[3.25rem] max-[750px]:pl-[0.70rem]">
+		<title>DuckyHQ // Home</title>
+		<div className="bg-[url(/gradient.png)] font-default text-white bg-center rounded-b-2xl bg-cover grid grid-cols-2 grid-rows-2 h-[59rem] text-left pl-[0.80rem] pt-96">
+			<div>
+				<h1 className="text-[15rem] bg-clip-text leading-[13rem] font-bold max-[1245px]:text-9xl max-[1333px]:pl-[0.50rem] max-[750px]:text-[3.25rem] max-[750px]:pl-[0.70rem]">
 					DuckyHQ
 				</h1>
-				<p className="text-5xl pb-24 pl-[0.90rem] max-[1333px]:text-4xl max-[750px]:text-xl w-[45rem]">
-					Professionals in UI design, web development, and content creation.
+			</div>
+			<div></div>
+			<div>
+				<p className="text-5xl pl-[0.90rem] max-[1333px]:text-4xl max-[750px]:text-xl w-[90%]">
+					UI design, web development, content creation, and gaming.
 				</p>
+			</div>
+			<div>
+				<p className="text-5xl max-[1333px]:text-4xl max-[750px]:text-xl w-[45rem]">
+					Ran by dukc.
+				</p>
+			</div>
+		</div>
+		<div className="h-screen font-default text-white">
+			<h1 className="text-8xl m-8 p-8 bg-neutral-900/50 border border-white/5 rounded-xl">
+				Featured Work
+			</h1>
+			<div className="h-full snap-y overflow-x-scroll w-full inline-block">
+				{featuredWork?.map((featured) => {
+					return <Featured key={featured.id} post={featured} />
+				})}
 			</div>
 		</div>
 		</>
 	)
+}
+
+function Featured({ featured }: any) {
+    const { postId, title, text, image } = featured || {};
+
+    return (
+        <>
+		<Link href={`/post/${postId}`}>
+			<div className="bg-neutral-900/50 p-8 mx-8 mb-8 grid grid-cols-2 grid-rows-1 border border-white/5 hover:border-white/10 border-b-8 rounded-xl hover:bg-neutral-800/40 transition-all duration-100 active:scale-[0.99]">
+				<div>
+					<h1 className="text-7xl font-bold pb-2">{title}</h1>
+					<p className="text-2xl w-[90%]">{text}</p>
+				</div>
+				<img src={image} alt="Image Header" className="rounded-lg mt-5 shadow-lg aspect-video" />
+			</div>
+		</Link>
+        </>
+    )
 }
