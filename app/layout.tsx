@@ -8,7 +8,10 @@ export default function RootLayout({ children }: {
   return (
     <html lang="en">
       <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="description" content="DuckyHQ Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="bg-black">
         <nav className="bg-black/[35%] p-7 rounded-b-2xl flex fixed w-screen place-content-between align-middle text-white backdrop-blur-xl">

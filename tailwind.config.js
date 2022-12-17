@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'default': ['"Montserrat Alternates"']
+        'default': ['Montserrat']
       },
       colors: {
         'logo-1': '#0040fb',

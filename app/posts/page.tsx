@@ -12,7 +12,7 @@ export default async function Page() {
 	const posts = await getPosts();
 
 	return (
-		<div className="bg-black h-full text-white overflow-x-hidden font-default">
+		<div className="bg-black h-full text-white overflow-x-hidden font-default pt-36">
 			<title>DuckyHQ // Posts</title>
 			<div className="h-full grid snap-y">
 				{posts?.map((post) => {
